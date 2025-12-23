@@ -15,7 +15,7 @@
  * 7. Update neutralPos[] array in main sketch
  * 
  * Author: Vinay Nekkanti
- * Date: December 2024
+ * Date: December 2025
  */
 
 #include <Wire.h>
