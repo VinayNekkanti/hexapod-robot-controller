@@ -1,0 +1,83 @@
+# Servo Calibration Values
+
+Record your calibrated servo neutral positions here for reference.
+
+## Instructions
+1. Run the servo_calibration.ino sketch
+2. Observe each servo at 90 degrees
+3. If the joint is not in neutral position, adjust the angle
+4. Record the correct angle below
+5. Update the neutralPos[] array in hexapod_controller.ino
+
+## Calibration Results
+
+Date: _______________
+
+### Leg 0 (Right Front)
+- Servo 0 (Coxa):  _____ degrees
+- Servo 1 (Femur): _____ degrees
+- Servo 2 (Tibia): _____ degrees
+
+### Leg 1 (Left Front)
+- Servo 3 (Coxa):  _____ degrees
+- Servo 4 (Femur): _____ degrees
+- Servo 5 (Tibia): _____ degrees
+
+### Leg 2 (Right Middle)
+- Servo 6 (Coxa):  _____ degrees
+- Servo 7 (Femur): _____ degrees
+- Servo 8 (Tibia): _____ degrees
+
+### Leg 3 (Left Middle)
+- Servo 9 (Coxa):  _____ degrees
+- Servo 10 (Femur): _____ degrees
+- Servo 11 (Tibia): _____ degrees
+
+### Leg 4 (Right Rear)
+- Servo 12 (Coxa):  _____ degrees
+- Servo 13 (Femur): _____ degrees
+- Servo 14 (Tibia): _____ degrees
+
+### Leg 5 (Left Rear)
+- Servo 15 (Coxa):  _____ degrees
+- Servo 16 (Femur): _____ degrees
+- Servo 17 (Tibia): _____ degrees
+
+## Code Format
+
+Copy this into your hexapod_controller.ino file:
+
+```cpp
+int neutralPos[NUM_SERVOS] = {
+  90, 90, 90,  // Leg 0: Coxa, Femur, Tibia (Right Front)
+  90, 90, 90,  // Leg 1: (Left Front)
+  90, 90, 90,  // Leg 2: (Right Middle)
+  90, 90, 90,  // Leg 3: (Left Middle)
+  90, 90, 90,  // Leg 4: (Right Rear)
+  90, 90, 90   // Leg 5: (Left Rear)
+};
+```
+
+## Notes
+
+- Typical range: 80-100 degrees for neutral positions
+- Small adjustments (±5-10 degrees) are normal
+- If a servo requires >20 degree adjustment, check mechanical assembly
+- Re-calibrate if you disassemble/reassemble the robot
+
+## Troubleshooting
+
+**Servo doesn't move:**
+- Check power supply
+- Verify I2C connections (SDA to A4, SCL to A5)
+- Ensure servo is properly connected to PCA9685
+
+**Servo jitters:**
+- Add capacitor across power rails
+- Check battery voltage (should be >7.0V)
+- Reduce load on servo
+
+**Inconsistent positions:**
+- Servo may be damaged - replace if needed
+- Check for mechanical binding
+- Ensure adequate power supply current

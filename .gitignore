@@ -1,0 +1,43 @@
+# Arduino
+*.hex
+*.eep
+*.elf
+*.map
+*.lst
+*.lss
+*.sym
+*.tmp
+
+# Build directories
+build/
+*.build/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Documentation
+*.pdf
+*.docx
+!docs/*.pdf
+
+# Temporary files
+*.bak
+*.old
+tmp/
+temp/
+
+# Logs
+*.log
+logs/
+
+# Calibration backups
+calibration/*.bak
