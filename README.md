@@ -2,8 +2,7 @@
 
 An 18-DOF hexapod robot with autonomous obstacle avoidance capabilities, built with Arduino Uno and controlled through I2C communication protocols.
 
-![Hexapod Robot](docs/images/hexapod.jpg)
-*Add your robot photo here*
+
 
 ## Overview
 
@@ -318,7 +317,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 **Vinay Nekkanti**
 - GitHub: [@VinayNekkanti](https://github.com/VinayNekkanti)
-- LinkedIn: [linkedin.com/in/vinay-nekk019](https://www.linkedin.com/in/vinay-nekk019)
+- LinkedIn: [linkedin.com/in/vinay-nekk01](https://www.linkedin.com/in/vinay-nekk01)
 - Email: nekkantv@uci.edu
 
 ## References
