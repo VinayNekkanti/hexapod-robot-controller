@@ -11,7 +11,7 @@
  * - 7.4V 2S LiPo Battery
  * 
  * Author: Vinay Nekkanti
- * Date: December 2024
+ * Date: December 2025
  * GitHub: https://github.com/VinayNekkanti/hexapod-robot-controller
  * 
  * Pin Configuration:
